@@ -48,10 +48,11 @@ export default function AddCarButton() {
     const newCar = { id: Date.now(), name, model, year, color, price, latitude, longitude }
     const validate = validateForm(newCar)
     if (validate === null) {
-      addCar(newCar)
       onClose()
       clearForm()
-      navigate(newCar.id)
+      setError(null)
+      navigate(newCar.id.toString())
+      setTimeout(() => addCar(newCar), 0)
     } else {
       setError(validate)
     }
