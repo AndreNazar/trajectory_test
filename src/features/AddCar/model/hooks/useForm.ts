@@ -45,6 +45,7 @@ export default function useFormCar() {
   const [state, dispatch] = useReducer(reducer, initialState)
 
   const changerName = (e: ChangeEvent<HTMLInputElement>) => dispatch({ type: "name", payload: e.target.value })
+
   const changerModel = (e: ChangeEvent<HTMLInputElement>) => dispatch({ type: "model", payload: e.target.value })
   const changerColor = (e: ChangeEvent<HTMLInputElement>) => dispatch({ type: "color", payload: e.target.value })
   const changerYear = (e: ChangeEvent<HTMLInputElement>) => {

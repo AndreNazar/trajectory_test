@@ -1,5 +1,6 @@
 import { MapContainer, Marker, TileLayer, useMap, useMapEvents } from "react-leaflet"
 import { useEffect } from "react"
+import { icon } from "leaflet"
 
 interface Props {
   latitude: number
@@ -16,7 +17,7 @@ export default function Map({ latitude, longitude, width = 500, height = 250, po
       <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
       <ChangeView lat={latitude} lng={longitude} />
       {setPosition && <ClickHandler setPosition={setPosition} />}
-      <Marker position={position || [latitude, longitude]} />
+      <Marker position={position || [latitude, longitude]} icon={icon({ iconUrl: "/trajectory_test/marker-icon.png", iconSize: [50, 50], shadowUrl: "" })} />
     </MapContainer>
   )
 }
