@@ -24,6 +24,11 @@ export default function EditCarButton({ id, name, price }: Props) {
   const handleChangePrice = (e: ChangeEvent<HTMLInputElement>) => {
     setLocalPrice(e.target.value)
   }
+  const onOpenHandler = () => {
+    onOpen()
+    setLocalName(name)
+    setLocalPrice(price.toString())
+  }
 
   const onSubmit = () => {
     update(id, localName, Number(localPrice))
@@ -32,7 +37,7 @@ export default function EditCarButton({ id, name, price }: Props) {
 
   return (
     <>
-      <Button onClick={onOpen} icon="edit">
+      <Button onClick={onOpenHandler} icon="edit">
         Изменить
       </Button>
       {isOpen && (
