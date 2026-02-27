@@ -1,0 +1,23 @@
+.container {
+    background-color: black;
+    width: fit-content;
+    height: fit-content;
+    padding: .5em 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+    gap: .5em;
+    color: white;
+    box-sizing: border-box;
+
+    svg {
+        width: 16px;
+        height: 16px;
+    }
+
+    &.w100 {
+        width: 100%;
+    }
+}

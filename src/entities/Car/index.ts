@@ -1,0 +1,6 @@
+export type { ICar } from "./types/Car.interfaces"
+export { default as CarItem } from "./ui/CarItem/CarItem"
+export { default as CarCard } from "./ui/CarCard/CarCard"
+export { default as CarLocation } from "./ui/CarLocation/CarLocation"
+export { useCarStore } from "./model/store"
+export { type SelectDataType } from "./model/store"

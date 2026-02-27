@@ -1,0 +1,6 @@
+export { default as CarIcon } from "./icons/car.svg?react"
+export { default as CloseIcon } from "./icons/close.svg?react"
+export { default as AddIcon } from "./icons/add.svg?react"
+export { default as EditIcon } from "./icons/edit.svg?react"
+export { default as FilterIcon } from "./icons/filter.svg?react"
+export { default as SelectIcon } from "./icons/select.svg?react"

@@ -1,0 +1,21 @@
+.map {
+    background-color: white;
+    padding: 2em;
+    border-radius: 10px;
+
+    h2 {
+        color: var(--text-color);
+    }
+
+    .map_content {
+        display: flex;
+        align-items: end;
+        gap: 1em;
+        flex-wrap: wrap;
+
+        .coordinates {
+            display: grid;
+            gap: 1em;
+        }
+    }
+}

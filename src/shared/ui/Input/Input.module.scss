@@ -1,0 +1,22 @@
+.input_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: .3em;
+
+    .label {
+        color: var(--text-secondary-color);
+        font-size: 14px;
+    }
+
+    .input {
+        width: 100%;
+        padding: .5em 1em;
+        border-radius: 5px;
+        border: 1px solid var(--text-secondary-color);
+        color: var(--text-color);
+        outline: none;
+        box-sizing: border-box;
+
+    }
+
+}

@@ -1,0 +1,12 @@
+.container {
+    .label {
+        color: var(--text-secondary-color);
+        font-size: 14px;
+    }
+
+    .value {
+        color: var(--text-color);
+        font-weight: 600;
+        font-size: 18px;
+    }
+}

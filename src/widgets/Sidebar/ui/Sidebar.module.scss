@@ -1,0 +1,25 @@
+.container {
+    height: 100vh;
+    overflow-y: auto;
+    min-width: 400px;
+    box-sizing: border-box;
+
+    .controls {
+        display: flex;
+        padding: 1em;
+        gap: 1em;
+        justify-content: flex-end;
+    }
+
+    &::-webkit-scrollbar {
+        width: 2px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: var(--secondary-color);
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #aaa;
+    }
+}
